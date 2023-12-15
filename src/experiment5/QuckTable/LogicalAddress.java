@@ -1,4 +1,4 @@
-package experiment5;
+package experiment5.QuckTable;
 
 /**
  * @Author scinloop

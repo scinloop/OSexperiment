@@ -1,4 +1,4 @@
-package experiment5;
+package experiment5.PageTable;
 
 /**
  * @Author scinloop
@@ -19,13 +19,13 @@ public class AdressChange {
         pageTables[4] = new PageTable(4, 5);
         pageTables[5] = new PageTable(5, 6);
 
-        if(pageController.isSegmentExist(logicalAddress.getPagenum())) {
+        if(pageController.isPageExist(logicalAddress.getPagenum())) {
 
-            System.out.println("段存在");
+            System.out.println("页存在");
             System.out.println("逻辑地址：" +logicalAddress.getPagenum() + " " + logicalAddress.getOffset());
             System.out.println("物理地址：" + pageTables[logicalAddress.getPagenum()].getPageFrameNum() + " " + logicalAddress.getOffset());
         } else {
-            System.out.println("段不存在");
+            System.out.println("页不存在");
         }
 
 

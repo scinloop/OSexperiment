@@ -1,4 +1,4 @@
-package experiment5;
+package experiment5.PageTable;
 
 /**
  * @Author scinloop
@@ -20,7 +20,7 @@ public class PageController {
         return SegmentTableLength;
     }
 
-    Boolean isSegmentExist(int segmentNumber) {
+    Boolean isPageExist(int segmentNumber) {
         return segmentNumber < SegmentTableLength;
     }
 }
