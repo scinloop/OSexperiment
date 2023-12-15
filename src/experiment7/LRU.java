@@ -7,6 +7,11 @@ package experiment7;
 import java.util.Scanner;
 import java.util.Stack;
 
+/**
+ * LRU最近最久未使用页面置换算法
+ * Author:陆振宇
+ * time:2019.11.30
+ */
 public class LRU {
     int frameNum;    // 分配给该作业的物理页框数
     int[] pageFrame; // 物理页框

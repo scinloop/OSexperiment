@@ -6,6 +6,12 @@ package experiment7;
  */
 import java.util.Scanner;
 import java.util.Stack;
+
+/**
+ * FIFO页面替换算法
+ * Author:陆振宇
+ * time:2019.11.30
+ */
 public class FIFO {
 
     int frameNum;    // 分配给该作业的物理页框数
