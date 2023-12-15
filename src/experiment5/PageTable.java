@@ -23,10 +23,5 @@ public class PageTable {
         Pagenum = pagenum;
     }
 
-//    将物理地址转变为物理地址
 
-    public void changeLogicalAdressToPhycialAdress(int PageNum,int offset) {
-        System.out.println("逻辑地址为："+PageNum+" "+offset);
-        System.out.println("物理地址为："+PageFrameNum+" "+offset);
-    }
 }
