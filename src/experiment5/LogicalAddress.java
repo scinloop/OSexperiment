@@ -20,4 +20,8 @@ public class LogicalAddress {
     public void setPagenum(int pagenum) {
         Pagenum = pagenum;
     }
+
+    public int getOffset() {
+        return Offset;
+    }
 }
