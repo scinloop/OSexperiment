@@ -60,7 +60,7 @@ public class EDF {
 
                 try {
                     System.out.println("执行任务 ---- " + taskToExecute.name + " 当前时间： " + currentTime);
-                    Thread.sleep(100);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
