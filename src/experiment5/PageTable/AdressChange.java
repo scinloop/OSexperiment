@@ -7,7 +7,7 @@ package experiment5.PageTable;
 public class AdressChange {
     public static void main(String[] args) {
 
-        LogicalAddress logicalAddress = new LogicalAddress(3, 1024);
+        LogicalAddress logicalAddress = new LogicalAddress(7, 1024);
 
         PageController pageController = new PageController(0, 6);
 
