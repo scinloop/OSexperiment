@@ -13,10 +13,10 @@ import java.util.concurrent.TimeUnit;
 
 class RealTimeTask {
     String name;
-    int period;
-    int executionTime;
-    int deadline;
-    int remainingTime;
+    int period;//周期
+    int executionTime;//运行时间
+    int deadline;//截止时间
+    int remainingTime;//剩余时间
 
     public RealTimeTask(String name, int period, int executionTime) {
         this.name = name;
@@ -59,8 +59,8 @@ public class EDF {
                 taskToExecute.remainingTime--;
 
                 try {
-                    System.out.println("执行任务 ---- " + taskToExecute.name + " 当前时间： " + currentTime);
-                    Thread.sleep(1000);
+                    System.out.println("执行任务中" + taskToExecute.name + " 当前时间为： " + currentTime);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -69,7 +69,7 @@ public class EDF {
 
                 if (taskToExecute.remainingTime == 0) {
                     taskToExecute.deadline += taskToExecute.period;
-                    System.out.println("任务执行完毕 ******* " + taskToExecute.name + " 当前时间： " + currentTime);
+                    System.out.println("任务执行完毕 " + taskToExecute.name + " 当前时间为： " + currentTime);
                 }
             }
         }

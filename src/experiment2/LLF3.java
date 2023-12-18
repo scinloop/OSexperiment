@@ -17,9 +17,9 @@ class RealTimeTask4 {
     String name;
     int period;
     int executionTime; // 需要执行时间
-    int deadline;      // 截止数据 1
-    int remainingTime; // 剩余时间 1
-    int laxity;        // 松弛度   1
+    int deadline;      // 截止数据
+    int remainingTime; // 剩余时间
+    int laxity;        // 松弛度
 
     public RealTimeTask4(String name, int period, int executionTime) {
         this.name = name;
@@ -83,7 +83,7 @@ public class LLF3 {
 
 
                 try {
-                    System.out.println("执行任务 ---- " + taskToExecute.name + " 当前时间： " + currentTime);
+                    System.out.println("执行任务中 " + taskToExecute.name + " 当前时间是： " + currentTime);
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -94,8 +94,8 @@ public class LLF3 {
 
                 if (taskToExecute.remainingTime == 0) {
                     // taskToExecute.deadline += taskToExecute.period;
-                    taskToExecute.laxity = 100;
-                    System.out.println("任务执行完毕 ******* " + taskToExecute.name + " 当前时间： " + currentTime);
+                    taskToExecute.laxity = 1000;
+                    System.out.println("任务执行完毕 " + taskToExecute.name + " 当前时间是： " + currentTime);
                 }
             }
         }
