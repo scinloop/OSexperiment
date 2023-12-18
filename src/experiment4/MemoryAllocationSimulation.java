@@ -1,3 +1,4 @@
+//CPP实现
 //package experiment4;
 //
 //import java.util.ArrayList;
@@ -103,7 +104,8 @@
 //
 //    private void worstFit(int processId, int size) {
 //        List<MemoryBlock> freeBlocks = getFreeBlocks();
-//        Collections.sort(freeBlocks, Comparator.comparingInt(block -> block.size).reversed());
+//        Collections.sort(freeBlocks, Comparator.comparingInt((MemoryBlock block) -> block.size).reversed());
+//
 //
 //        for (MemoryBlock block : freeBlocks) {
 //            if (block.size >= size) {
